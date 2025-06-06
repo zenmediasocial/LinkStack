@@ -912,8 +912,6 @@ class UserController extends Controller
             'Content-Disposition' => 'attachment; filename="'.$fileName.'"',
         ];
         return response()->json($userData, 200, $headers);
-
-        return back();
     }
 
     //Export all user data
@@ -948,8 +946,6 @@ class UserController extends Controller
             'Content-Disposition' => 'attachment; filename="'.$fileName.'"',
         ];
         return response()->json($userData, 200, $headers);
-    
-        return back();
     }    
 
     public function importData(Request $request)
